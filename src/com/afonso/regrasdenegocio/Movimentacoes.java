@@ -11,6 +11,11 @@ public class Movimentacoes  implements Destinos {
 	public void taxaMg() {
 		System.out.println("O ICMS partindo de MG é: " + MG);
 	}
+	
+	public void taxaDf() {
+		System.out.println("O ICMS partindo do DF é: " + DF);
+	}
+	
 
 	public void taxaSpParaMG() {
 		if (SP > MG) {
@@ -27,6 +32,14 @@ public class Movimentacoes  implements Destinos {
 			System.out.println("Considerar valor de SP");
 		}
 	}
+	public void taxaDFParaSp() {
+		if (DF > SP) {
+			System.out.println("Considerar valor do DF");
+		} else {
+			System.out.println("Considerar valor de SP");
+		}
+	}
+	
 
 	public void taxaCobrarSeValorIgual() {
 		System.out.println("Considerar o valor do ponto de partida.");
